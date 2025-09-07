@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Carousel</title>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2/dist/tailwind.min.css" rel="stylesheet">
+  <script type="module" src="./event-carousel.es.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: transparent;
+      overflow: hidden;
+    }
+    .event-carousel-root {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <event-carousel events='[
+    {
+      "id": "1",
+      "title": "Facebook Live Q&A with Jill Jodar",
+      "date": "January 6, 2025",
+      "time": "10:00 AM",
+      "description": "Kick off the new year with a bang! Join Jill Jodar as she teams up with The Solo Esthetician for TWO Facebook Live Q&A sessions for licensed estheticians and future pros. Gain fresh insights into client experience and management that will leave you feeling confident and in control of your practice as we head into 2025.",
+      "image": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=1080&h=1080&fit=crop",
+      "link": "https://www.facebook.com/TheSoloEsthetician"
+    }
+  ]'></event-carousel>
+</body>
+</html>
